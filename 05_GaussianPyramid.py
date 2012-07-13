@@ -41,7 +41,7 @@ for i in range(1,6):
 img_half=cv2.pyrDown(img_original)
 img_quat=cv2.pyrDown(img_half)
 
-cv2.imshow('HOGE',img_original)
+cv2.imshow('original',img_original)
 cv2.imshow('Half size',img_half)
 cv2.imshow('Quater size',img_quat)
 
