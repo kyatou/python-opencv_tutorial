@@ -32,10 +32,10 @@ if (len(argvs) != 2):
  
 imagefilename = argvs[1]
 try:
-	img=cv2.imread(imagefilename, 1)
+    img=cv2.imread(imagefilename, 1)
 except:
-	print 'faild to load %s' % imagefilename
-	quit()
+    print 'faild to load %s' % imagefilename
+    quit()
 
 imgshape=img.shape
 roiWidth=imgshape[1]/4
@@ -54,4 +54,4 @@ img[sy:ey,sx:ex]=cv2.bitwise_not(roi)
 cv2.imshow('roi image',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows() 
-				
+                

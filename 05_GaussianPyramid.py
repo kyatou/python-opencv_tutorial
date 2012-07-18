@@ -32,8 +32,6 @@ img_original= numpy.zeros((imgheight,imgwidth,1),numpy.uint8)
 for i in range(1,6):
 	cv2.circle(img_original,(20*2**i,20*2**i),i*10,(255,255,255),2)
 
-
-
 #pyrDown(...)
 #   pyrDown(src[, dst[, dstsize[, borderType]]]) -> dst
 
